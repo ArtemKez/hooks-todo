@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+.container {
+    padding: 14px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    padding: 12px 0 12px 40px;
+    background-color: #008cff;
+    color: white;
+    font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tasks-list {
+    border: 1px solid gray;
+    padding: 8px 40px 8px 8px;
+    margin-bottom: 6px;
+    box-shadow: 0 6px 5px 0 rgba(34, 60, 80, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.create-task-form {
+    border: 1px solid gray;
+    padding: 8px 40px 8px 8px;
+    box-shadow: 0 6px 5px 0 rgba(34, 60, 80, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task > div {
+    display: flex;
+    align-items: center;
+}
+
+.form-style {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.add {
+    color: #008cff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background: none;
+    padding: 18px 0 10px 94%;
+}
+
+.close-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.close-icon,
+input,
+.add {
+    cursor: pointer;
 }
